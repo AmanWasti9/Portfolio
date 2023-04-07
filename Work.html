@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="icon.png">
+    <title>Portfolio - Syed Amanullah Wasti</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+
+        <!----Header---->
+        <header class="MainHeader">
+            <div class="header1">
+              <h2>Portfo<span class="spancolor">lio</span></h2>
+            </div>
+          
+            <div class="header2">
+              <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#service">Service</a></li>
+                <li><a href="#"><span class="spancolor">Work</span></a></li>
+                <li><a href="index.html#reason">Why Me</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+              </ul>
+              <span><img class="picture" onclick="showMenu()" src="images/bar.jpg"></span>
+            </div>
+          
+          </header>
+          
+          
+    <script>
+    function showMenu() {
+      var x = document.getElementById("menu");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+    
+
+   <!----Work Section---->
+   <div class="Work-Main">
+
+    <div class="Work-type">
+        <p class="spancolor">Type of Work</p>
+        <p class="spanpointer" onclick="funct1()" id="allButton">All</p>
+        <p class="spanpointer" onclick="funct2()" id="htmlCssJsButton">HTML, CSS & JAVASCRIPT</p>
+        <p class="spanpointer" onclick="funct3()" id="reactButton">REACT JS</p>
+
+    </div>
+    <div class="Work-all">      
+        <div class="container" id="con1">
+            <a href="Work1.html">
+                <center><img src="images/pic1.jpg"  alt=""></center>
+                <center><p>Sneakers - Ecommerce website</p></center>
+                <center><p>React Js1</p></center>
+            </a>
+        </div>
+        <div class="container" id="con1">
+            <a href="Work1.html">
+                <center><img src="images/pic1.jpg" alt=""></center>
+                <center><p>Sneakers - Ecommerce website</p></center>
+                <center><p>React Js2</p></center>
+            </a>
+        </div>
+        <div class="container" id="con2">
+            <a href="Work1.html">
+                <center><img src="images/pic1.jpg" alt=""></center>
+                <center><p>Sneakers - Ecommerce website</p></center> 
+                <center><p>React Js3</p></center>
+            </a>
+        </div>
+        <div class="container" id="con2">
+            <a href="Work1.html">
+                <center><img src="images/pic1.jpg" alt=""></center>
+                <center><p>Sneakers - Ecommerce website</p></center>
+                <center><p>React Js4</p></center>
+            </a>
+        </div>
+        
+    </div>
+
+</div>
+
+
+    
+    <!------footer start--------->
+	<footer id="contact">
+		<p>Syed Amanullah Wasti</p>
+		<p>For further details HTML, CSS, and coding - please click on the link below to to contact me</p>
+		<div class="social">
+			<a href="#"><i class='bx bxl-facebook' ></i></a>
+			<a href="#"><i class="bx bxl-instagram"></i></a>
+			<a href="#"><i class='bx bxl-gmail'></i></a>
+		</div>
+		<p class="end">CopyRight By Syed Amanullah Wasti</p>
+	</footer>
+
+    
+<script src="index.js"></script>
+
+</body>
+</html>

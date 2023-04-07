@@ -1,0 +1,704 @@
+body{
+    background: #050801;
+    margin: 0 10rem;
+}
+/*Header css*/
+.header1, .header2{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-family: 'Bauhaus 93';
+
+}
+.header1 h2{
+    font-size: 2.5rem;
+}
+.header2{
+    float: right;
+    display: flex;
+}
+.header2 ul{
+    list-style: none;
+}
+.header2 li{
+    display: inline-block;
+    margin: 1rem 2rem;
+}
+.header2 a{
+    font-size: larger;
+    color: white;
+    text-decoration: none;
+}
+.header2 a:hover{
+    color: yellow;
+    transition: 0.2s;
+}
+
+/*Home css*/
+.section1{
+    margin: 15rem 0;
+}
+.section1 .p1{
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: white;
+    font-family: 'Bauhaus 93';
+}
+.section1 .p2{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    font-family: 'Bauhaus 93';
+}
+.spancolor{
+    color: yellow;
+}
+.section2, .section1{
+    display: inline-block;
+}
+.section2{
+    float: right;
+    margin: 5rem 10rem;
+}
+.a{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: yellow;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+	overflow:hidden;
+    transition: 0.5s;
+    letter-spacing: 4px;
+	-webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+}
+.a:nth-child(1){
+filter: hue-rotate(290deg);
+}
+.a:nth-child(3){
+filter: hue-rotate(110deg);
+}
+
+.a:hover{
+    background-color: yellow;
+    color: #050801;
+    box-shadow: 0 0 5px yellow,
+                0 0 25px yellow,
+                0 0 50px yellow,
+                0 0 250px yellow;
+}
+.a span{
+    position: absolute;
+    display: block;
+}
+.a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,yellow);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1
+{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+
+.a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,yellow);
+    animation: animate2 1s linear infinite;
+	animation-delay:0.25s;
+}
+@keyframes animate2
+{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+
+.a span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,yellow);
+    animation: animate3 1s linear infinite;
+	animation-delay:0.5s;
+}
+@keyframes animate3
+{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+.a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,yellow);
+    animation: animate4 1s linear infinite;
+	animation-delay:0.75s;
+}
+@keyframes animate4
+{
+    0%
+	{
+        bottom: -100%;
+    }
+    50%,100%
+	{
+        bottom: 100%;
+    }
+}
+/*Service css*/
+.services{
+    margin: 5rem 0;
+    margin-bottom: 30rem;
+}
+.ser_h{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Berlin Sans FB';
+}
+.service1,.service2,.service3{
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    border: 2px solid yellow;
+    display: inline-block;
+    width: 25%;
+    margin-left: 1rem;
+    padding-bottom: 2rem;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+
+}
+.inclusion{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    font-family: 'Berlin Sans FB';
+    float: left;
+    text-align: left;
+}
+.h3{
+    font-size: xx-large;
+    font-family: 'Bauhaus 93';
+    text-align: center;
+}
+.ser_usd{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Berlin Sans FB';
+}
+.ser_inc{
+    font-weight: bold;
+    font-size: medium;
+    margin-left: 1rem;
+    font-family: 'Berlin Sans FB';
+}
+.day_ser{
+    font-size: 1.1rem;
+}
+
+/*Reasons css*/
+.reason{
+    display: flex;
+    margin-bottom: 20rem;
+}
+.left-a1{
+    border: 2px solid yellow;
+    width: 14.5rem;
+    margin: 2rem 0;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+
+}
+.left-a1 img{
+    margin-left: 1rem;
+    margin: 1rem ;
+}
+.left-a2{
+    border: 2px solid yellow;
+    width: 10rem;
+    margin-left: 1rem;
+    margin-top: 12rem;
+    margin-bottom: 2rem;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+
+}
+.left-a2 img{
+    width: 80%;
+    margin-left: 1rem;
+    margin: 1rem ;
+}
+.left-a3{
+    border: 2px solid yellow;
+    width: 14.5rem;
+    margin: 2rem 0;
+    margin-left: 1rem;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+
+}
+.left-a3 img{
+    margin-left: 1rem;
+    margin: 1rem ;
+}
+.left-a4 {
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Berlin Sans FB';
+    font-weight: bold;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.left-a4 .p1{
+    color: yellow;
+    font-size: 2rem;
+}
+.left-a4 .p2{
+    color: white;
+    font-size: 3rem;
+    font-family: 'Berlin Sans FB';
+}
+.left-a4 span{
+    color: white;
+    font-family: 'Berlin Sans FB';
+    font-weight: bold;
+}
+.left-a4 i{
+    color: yellow;
+    font-family: 'Berlin Sans FB';
+}
+.left-a4 .color{
+    color: yellow;
+    font-family: 'Berlin Sans FB';
+}
+
+
+/*About css*/
+
+.about{
+	width: 100%;
+	padding: 100px 0px;
+    margin-bottom: 1.5rem;
+}
+
+.about img{
+	height: auto;
+	width: 430px;
+    border-radius: 4rem;
+}
+.about-text{
+	width: 550px;
+    font-family: 'Berlin Sans FB';
+}
+.main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.about-text h2{
+	color: white;
+	font-size: 75px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.about-text h5{
+	color: yellow;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+}
+.about-text p{
+	color: whitesmoke;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+}
+.about-text h3{
+	color: whitesmoke;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 25px;
+	margin-bottom: 45px;
+}
+/*
+.Down-btn{
+    color: black;
+    text-decoration: none;
+    background-color: yellow;
+    padding: 1rem 1rem;
+    font-family: 'Berlin Sans FB';
+    font-size: 1.5rem;
+    border-radius: 5rem;
+    transition: transform .4s; 
+    border: 2px solid transparent;
+}
+.Down-btn:hover{
+	transform: scale(1.2);
+}*/
+.btn{
+	background-color: yellow;
+	color: black;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 10px 25px;
+	border-radius: 30px;
+	transition: transform .4s; 
+}
+.btn:hover{
+    background-color: transparent;
+    color: white;
+    border: 2px solid yellow;
+}
+
+
+/*Work css*/
+
+.Work-type{
+    color: white;
+    font-family: 'Berlin Sans FB';
+    text-transform: uppercase;
+    margin: 10rem 0;
+    font-size: 1.5rem;
+}
+.spanpointer{
+    cursor: pointer;
+    font-size: 1rem;
+}
+.spanpointer:hover{
+    color: yellow;
+}
+.Work-Main{
+    display: flex;
+    flex-direction: row;
+    margin: 5rem 0;
+}
+
+.Work-all{
+    width: 90%;
+    height: auto;
+    margin-left: 2rem;
+    padding-bottom: 2rem;
+}
+.Work-all h2{
+    color: WHITE;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family:  'Berlin Sans FB';
+}
+.Work-type{
+    margin: 1rem;
+}
+.container{
+    border: 2px solid yellow;
+    color: white;
+    display: inline-block;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    width: 20%;
+    padding: 1rem 0;
+    font-family:  'Berlin Sans FB';
+    font-size: 1rem;
+    display: inline-block;
+}
+.container :hover{
+    cursor: pointer;
+}
+#b, #c, #d{
+    display: none;
+}
+.container img{
+    width: 80%;
+    border: 4px solid white;
+}
+.container a{
+    font-family:  'Berlin Sans FB';
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/*Footer css*/
+
+footer{
+	position: relative;
+	width: 100%;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    font-family: 'Berlin Sans FB';
+}
+footer p:nth-child(1){
+	font-size: 30px;
+	color: white;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+footer p:nth-child(2){
+	color: white;
+	font-size: 17px;
+	width: 500px;
+	text-align: center;
+	line-height: 26px;
+}
+.social{
+	display: flex;
+}
+.social a{
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:  yellow;
+	border-radius: 50%;
+	margin: 22px 10px;
+	color: black;
+	text-decoration: none;
+	font-size: 20px;
+}
+.social a:hover{
+	transform: scale(1.3);
+	transition: .3s;
+}
+.end{
+	position: absolute;
+	color:yellow;
+	bottom: 35px;
+	font-size: 14px; 
+}
+
+/*Work1 start*/
+.heading-title{
+    color: white;
+    font-size: 3rem;
+    font-family:  'Berlin Sans FB';
+}
+.click{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    font-family:  'Berlin Sans FB';
+
+}
+.click a{
+    text-decoration: none;
+    color: white;
+    font-family:  'Berlin Sans FB';
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+.click a:hover{
+    color: yellow;
+}
+.web-view{
+    border: 2px solid white;
+    width: 70%;
+    overflow: scroll;
+    overflow-x: hidden; 
+    height: 50vh;
+    margin-bottom: 10rem;
+
+}
+.web-view img{
+    width: 100%;
+}
+
+.web-view::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 20px;
+}
+.web-view::-webkit-scrollbar-track{
+    background-color: #efefef;
+    border-radius: 20px;
+}
+.web-view::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(#f20bd6,#20bcf2);
+    border-radius: 2rem;
+
+}
+.heading-view{
+    color: white;
+    font-size: 2rem;
+    font-family:  'Berlin Sans FB';
+}
+.line{
+    position: absolute;
+    border: 4px solid black;
+    width: 5rem;
+    left: 47.5%;
+    top: 120%;
+}
+.mob-view{
+    border: 2px solid white;
+    border-top: 4rem solid white;
+    border-left: 8px solid white;
+    border-bottom: 4rem solid white;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius:2rem;
+    border-bottom-right-radius:2rem;   
+    width: 35%;
+    overflow: scroll;
+    overflow-x: hidden; 
+    height: 70vh;
+    margin-bottom: 10rem;
+    z-index: -1;
+
+}
+.mob-view img{
+    width: 98%;
+    display:block;
+}
+
+.mob-view::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 20px;
+}
+.mob-view::-webkit-scrollbar-track{
+    background-color: white;
+    margin: 0 0;
+}
+.mob-view::-webkit-scrollbar-thumb{
+    border-radius: 2rem;
+
+}
+.picture{
+    display: none;
+}
+
+
+
+
+
+ @media screen and (max-width: 600px){
+    body{
+        margin: 1rem 1rem;
+    }
+    .header1 h2{
+        font-size: 1.5rem;
+    }
+    .header2 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .picture {
+      display: block;
+      
+    }
+    #menu {
+      display: none;
+      position: absolute;
+      top: 0.8rem;
+      right: 4.5rem;
+      border: 2px solid yellow;
+      padding-right: 1.5rem;
+    
+    }
+    #menu li {
+    display: block;
+      margin: 5px 0;
+    }
+   
+    #menu-icon {
+      display: block;
+    }
+    .section1{
+        margin: 0.7rem 0;
+    }
+    .section2 a{
+        top: -7rem;
+    }
+    .services{
+        margin: 1rem 0;
+        margin-bottom: 15rem;
+    }
+   
+    .service1,.service2,.service3{
+        width: 50%;
+        margin-bottom: 1rem;
+    }
+    .reason{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+    .left-a1,.left-a2{
+        display: none;
+    }
+    .about{
+        margin-bottom: 1.5rem;
+    }
+    
+    .about-text h2{
+        font-size: 2.5rem;
+    }
+    .about-text p{
+        font-size: 0.8rem;
+    }
+    .about-text h3{
+        color: whitesmoke;
+        letter-spacing: 1px;
+        line-height: 28px;
+        font-size: 1.5rem;
+        margin-bottom: 45px;
+    }
+    /* Work Page */
+
+    .Work-type{        
+        margin: 1rem 0;
+        font-size: 2rem;
+        margin-top: 5rem;
+    }   
+    .Work-all{
+        width: 90%;
+        height: auto;
+        margin-left: 2rem;
+        padding-bottom: 2rem;
+        margin-top: 5rem;
+    }
+    .container{      
+        width: 40%;
+        font-size: 1.2rem;
+    }      
+    .spanpointer{
+        font-size: 1.5rem;
+    }
+}
+  
+
+
